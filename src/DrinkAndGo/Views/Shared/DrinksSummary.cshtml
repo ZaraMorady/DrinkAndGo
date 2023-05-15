@@ -1,0 +1,44 @@
+﻿@model Drink
+
+<!-- 
+<div class="col-4" >
+    <div class="img-thumbnail" style="height: 400px;">
+        <img src="@Url.Content(Model.ImageThumbnailUrl)" alt="" />
+        <div class="caption-top">
+            <h3 class="formPullRightButton"> Drink Price : @Model.Price.ToString("c")  </h3>
+            <h3>
+                <a>   Drink Name : @Model.Name     </a>
+            </h3>
+            <p>  @Model.ShortDescription </p>
+        </div>
+        <div class="addToCart text-right">
+            <p class="button ">
+                <a class="btn btn-success" id="cartButton" asp-controller="ShoppingCart" asp-action="AddToShoppingCart" asp-route-drinkId="@Model.DrinkId">
+                    Add to cart
+                </a>
+            </p>
+        </div>
+
+    </div>
+</div>
+    -->
+
+
+   <div class="col">
+    <div class="card h-100">
+        <img src="@Url.Content(Model.ImageThumbnailUrl)" alt="" />
+        <div class="card-body">
+            <a>   <h4 class="card-title"> Drink Name : @Model.Name    </h4></a> 
+            <h5 class="formPullRightButton"> Drink Price : @Model.Price.ToString("c")  </h5>
+            <p class="card-text">@Model.ShortDescription</p>
+            <div class="addToCart text-right">
+                <p class="button ">
+                    <a class="btn btn-success" id="cartButton" asp-controller="ShoppingCart" asp-action="AddToShoppingCart" asp-route-drinkId="@Model.DrinkId">
+                        Add to cart
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
