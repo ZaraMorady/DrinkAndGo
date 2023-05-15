@@ -1,0 +1,18 @@
+# Set linguist-language attribute for specific file extensions
+*.cs    linguist-language=C#
+*.json linguist-language=JSON
+*.html  linguist-language=HTML
+*.css   linguist-language=CSS
+
+# Mark files as documentation
+README.md       linguist-documentation
+docs/*          linguist-documentation
+
+# Mark files as vendored (not directly maintained)
+vendor/*        linguist-vendored
+
+# Mark files as generated (automatically generated)
+dist/*          linguist-generated
+
+# Specify detectable files (automatically detected language)
+*.txt   linguist-detectable=true
