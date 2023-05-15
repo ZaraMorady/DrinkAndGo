@@ -2,7 +2,7 @@
 *.cs linguist-language=C#
 *.cshtml linguist-language=C#
 *.json linguist-language=JSON
-*.html  linguist-language=HTML
+*.html  linguist-language=C#
 *.css   linguist-language=CSS
 
 # Mark files as documentation
