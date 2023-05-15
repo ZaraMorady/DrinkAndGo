@@ -1,5 +1,6 @@
 # Set linguist-language attribute for specific file extensions
-*.cs    linguist-language=C#
+*.cs linguist-language=C#
+
 *.json linguist-language=JSON
 *.html  linguist-language=HTML
 *.css   linguist-language=CSS
